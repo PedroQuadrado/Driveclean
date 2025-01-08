@@ -6,8 +6,6 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-#This will set the correct RUBYGEMS VERSION
-gem "ffi", "= 1.16.3"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
