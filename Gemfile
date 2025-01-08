@@ -6,9 +6,12 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
+#This will set the correct RUBYGEMS VERSION
+gem "ffi", "= 1.16.3"
+#
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8"
+gem "jekyll", "~> 4.3.2"
 gem 'jekyll-paginate'
 
 #isto está aqui porque senão não dá o live server
