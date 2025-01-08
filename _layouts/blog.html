@@ -1,33 +1,467 @@
----
-layout: default
----
+<head>
 
-<h2>{{ page.title }}</h2>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% include page-intro.html %}
+    <!--====== Title ======-->
+    <title>Blog | Driveclean | Empresa de Detalhe Automóvel</title>
 
-{{ content }}
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="/../assets/images/favicon.png">
 
-<section>
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
 
-  <h3>Posts</h3>
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="/../assets/css/font-awesome.min.css">
 
-  <ul>
-    {% for post in site.posts %}
-    {% assign author = site.data.authors[post.author] %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <time datetime="{{ post.date }}">
-          <small>
-            <strong>{{ post.date | date_to_string }}</strong>
-            {% if author %}
-              by {{ author.name }}
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="/../assets/css/magnific-popup.css">
+
+    <!--====== animate css ======-->
+    <link rel="stylesheet" href="/../assets/css/animate.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="/../assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="/../assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="/../assets/css/style.css">
+
+    <style>
+        .blog-pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .blog-pagination a {
+            background-color: gainsboro;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        .blog-pagination .current-page,
+        .blog-pagination span {
+            background-color: #c22330;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+
+                                <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.png"
+                                        alt=""></a>
+                                <!-- logo -->
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button> <!-- navbar toggler -->
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="index.html#portfolio">Galeria </a></li>
+                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                </li>
+                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+<li class="nav-item">
+                                            <a class="nav-link" href="/portfolio">Portfólio </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#services">Serviços </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a class="nav-link">Social</a>
+                                            <ul class="sub-menu">
+                                                <li><a
+                                                        href="https://www.instagram.com/drivecleandetalheauto/">Instagram</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.facebook.com/drivecleandetalheautomovel/">Facebook</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop">Youtube</a>
+                                                </li>
+                                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto">TikTok</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </div> <!-- navbar collapse -->
+
+                                <div class="navbar-btn d-none d-sm-block">
+                                    <a class="main-btn" href="tel:{{ site.data.header.default_contact }}">{{ site.data.header.contact }}</a>
+                                </div>
+                            </nav>
+                        </div> <!-- navigation -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== PAGE TITLE  PART START ======-->
+
+    <div class="page-title-area">
+        <div class="section__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-title-content text-center">
+                        <h3 class="title">Blog</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                            </ol>
+                        </nav>
+                        <div class="scroll-to-down">
+                            <a href="#portfolio-scroll"><i class="fal fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PAGE TITLE  PART ENDS ======-->
+
+
+    <!--====== ARTICAL PART START ======-->
+
+    <section class="article-page-area pt-70 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                {% for post in paginator.posts %}
+                <div class="col-lg-4 col-md-6 col-sm-9">
+                    <div class="article-item mt-30">
+                        <div class="article-top text-center">
+                            <a href="{{ post.url }}"><span>{{ post.title }}</span></a>
+                        </div>
+                        <div class="article-thumb">
+                            <a href="#"><img src="{{ post.image }}" alt=""></a>
+                            <div class="date">
+                                <h5 class="title">{{ post.date | date: "%-d" }}</h5>
+                                <span>{% assign m = post.date | date: "%-m" %}
+                                    {% case m %}
+                                    {% when '1' %}JAN
+                                    {% when '2' %}FEV
+                                    {% when '3' %}MAR
+                                    {% when '4' %}ABR
+                                    {% when '5' %}MAI
+                                    {% when '6' %}JUN
+                                    {% when '7' %}JUL
+                                    {% when '8' %}AGO
+                                    {% when '9' %}SET
+                                    {% when '10' %}OUT
+                                    {% when '11' %}NOV
+                                    {% when '12' %}DEZ
+                                    {% endcase %}</span>
+                            </div>
+                        </div>
+                        <div class="article-content pl-25 pr-25 pt-25">
+                            <p>{{ post.excerpt | strip_newlines | truncate: 120 }}</p>
+                            <a href="{{ post.url }}">LER MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--====== ARTICAL PART ENDS ======-->
+    {% assign offsetvalue = paginator.page | minus: 3 %}
+    {% assign lastpages = paginator.total_pages | minus: 2 %}
+    {% assign lastpagesoffset = lastpages | minus: 3 %}
+        
+    {% if paginator.page == lastpages %}
+    true
+    {% endif %}
+
+    <!-- pagination -->
+
+    {% if paginator.total_pages > 1 %}
+    {% if paginator.page >= 4 and paginator.page < lastpages %} <div class="blog-pagination">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        {% else %}
+        <span>&laquo;</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) limit: 5 offset: offsetvalue %}
+        {% if page == paginator.page %}
+        <span class="current-page">{{ page }}</span>
+        {% elsif page == 1 %}
+        <a href="/blog">{{ page }}</a>
+        {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
+            }}</a>
+        {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        {% else %}
+        <span>&raquo;</span>
+        {% endif %}
+        </div>
+        {% elsif paginator.page >= lastpages %}
+        <div class="blog-pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+            {% else %}
+            <span>&laquo;</span>
             {% endif %}
-          </small>
-        </time>
-        {{ post.excerpt | strip_newlines | truncate: 180 }}
-      </li>
-    {% endfor %}
-  </ul>
 
-</section>
+            {% for page in (1..paginator.total_pages) limit: 5 offset: lastpagesoffset %}
+            {% if page == paginator.page %}
+            <span class="current-page">{{ page }}</span>
+            {% elsif page == 1 %}
+            <a href="/blog">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+                page
+                }}</a>
+            {% endif %}
+            {% endfor %}
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+            {% else %}
+            <span>&raquo;</span>
+            {% endif %}
+        </div>
+        {% else %}
+        <div class="blog-pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+            {% else %}
+            <span>&laquo;</span>
+            {% endif %}
+
+            {% for page in (1..paginator.total_pages) limit: 5 %}
+            {% if page == paginator.page %}
+            <span class="current-page">{{ page }}</span>
+            {% elsif page == 1 %}
+            <a href="/blog">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{
+                page
+                }}</a>
+            {% endif %}
+            {% endfor %}
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+            {% else %}
+            <span>&raquo;</span>
+            {% endif %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+
+
+        <!--====== FOOTER PART START ======-->
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-top d-block d-sm-flex  justify-content-between align-items-center">
+                            <div class="footer-logo">
+                                <a href="/index.html"><img src="/assets/images/logo.png" alt="Logo"></a>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/drivecleandetalheautomovel/"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop"><i
+                                                class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/drivecleandetalheauto/"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@drivecleandetalheauto"><svg
+                                                style="height: 1.1rem; fill: #fff; padding-bottom: 5px;"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                                <path
+                                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                                            </svg></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-about mt-30">
+                                <h4 class="title">Driveclean </h4>
+                                <p>{{ site.data.footer.description }}</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-list mt-30 ml-95">
+                                <h4 class="title">links</h4>
+                                <ul>
+                                    <li><a href="/index.html">HOME</a></li>
+                                    <li><a href="/index.html#about-us">Sobre nós</a></li>
+                                    <li><a href="/index.html#services">Serviços</a></li>
+                                    <li><a href="/index.html#portfolio">Portfólio</a></li>
+                                    <li><a href="/index.html#testimonials">Testemunhos</a></li>
+                                    <li><a href="/index.html#overview">Overview</a></li>
+                                    <li><a href="/index.html#facilities">Instalações</a></li>
+                                    <li><a href="/index.html#pricing">Planos</a></li>
+                                    <li><a href="/contact.html">Contactar</a></li>
+                                    <li><a href="#" id="open_preferences_center">Update cookies preferences</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+    
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info mt-30">
+                                <h3 class="title">Contactos</h3>
+                                <ul>
+                                    <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
+                                    <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
+                                    <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>
+                                    <li><i class="fal fa-envelope"></i>
+                                        {{ site.data.footer.email }} </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright">
+                            <p>Copyright @
+                                <script>document.write(new Date().getFullYear())</script>. Design by Squarebug
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!--====== FOOTER PART ENDS ======-->
+
+        <!--====== BACK TO TOP START ======-->
+
+        <a class="back-to-top">
+            <i class="fal fa-angle-up"></i>
+        </a>
+
+        <!--====== BACK TO TOP ENDS ======-->
+
+
+
+
+
+
+
+
+
+        <!--====== jquery js ======-->
+        <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+        <!--====== Bootstrap js ======-->
+        <script src="/../assets/js/bootstrap.min.js"></script>
+        <script src="/../assets/js/popper.min.js"></script>
+
+        <!--====== appear js ======-->
+        <script src="/../assets/js/jquery.appear.min.js"></script>
+
+        <!--====== Slick js ======-->
+        <script src="/../assets/js/slick.min.js"></script>
+
+        <!--====== wow js ======-->
+        <script src="/../assets/js/wow.js"></script>
+
+        <!--====== Isotope js ======-->
+        <script src="/../assets/js/isotope.pkgd.min.js"></script>
+
+        <!--====== Images Loaded js ======-->
+        <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+
+        <!--====== Magnific Popup js ======-->
+        <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+
+        <!--====== Main js ======-->
+        <script src="/../assets/js/main.js"></script>
+
+</body>
+
+</html>

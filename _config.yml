@@ -22,7 +22,22 @@ baseurl: "" # the subpath of your site if applicable, e.g. /blog
 url: "https://jekyll-netlify-boilerplate.netlify.com" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Permalink format (/blog/ is ignored for pages)
-permalink: /blog/:title
+
+permalink: /portfolio/:title
+
+plugins:
+  - jekyll-paginate
+
+#itens por pagina no blog
+paginate: 60
+paginate_path: "/portfolio/:num/"
+
+#teste para aceder a todas as tags
+collections:
+  planos:
+    output: false
+  tags:
+    output: true
 
 # Enable section IDs in frontmatter, useful for identifying current page
 # (used as a hook for styling etc)
