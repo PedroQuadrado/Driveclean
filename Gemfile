@@ -10,7 +10,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.2"
-gem 'jekyll-paginate'
+
+gem "jekyll-paginate"
 
 #isto está aqui porque senão não dá o live server
 gem "kramdown-parser-gfm"
