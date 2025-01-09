@@ -876,7 +876,7 @@
                         data-wow-delay="0ms">
                         <h3 class="title">{{ plano.title }}</h3>
                         <span>{{ plano.value }}</span>
-                        {{ plano.description }}
+                        {{ plano.description | markdownify }}
                         <a class="main-btn" href="contact.html">Contactar</a>
                     </div>
                 </div>
