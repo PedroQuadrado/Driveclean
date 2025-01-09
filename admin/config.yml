@@ -327,8 +327,8 @@ collections: # A list of collections the CMS should be able to edit
         name: teste_planos
         file: "_data/planos.yml"
         fields:
-          - name: teste_plano
-            label: Plano
+          - name: planos
+            label: Planos
             widget: list
             fields:
               - { name: title, label: Titulo }
