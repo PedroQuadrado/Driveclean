@@ -1,12 +1,36 @@
 planos:
-  - title: Plano 1
-    value: "130"
+  - title: Higienização interna
+    value: SOB ORÇAMENTO
     description: |+
-      Descrição
+      - Lavagem , limpeza e hidratação de todo o interior
+      - Lavagem de bancos
+      - Lavagem exterior detalhada
+      - Lavagem do compartimento do motor
+      - Aplicação de WetCoat
 
-      - item 1
-      - item 2
-      - item 3
+
+
+
+  - title: Lavagem de manutenção
+    value: Desde 49 € + IVA
+    description: |+
+      (Disponível apenas para viaturas previamente higienizadas)
+
+      - Limpeza e aspiração interior
+      - Lavagem exterior detalhada
+      - Lavagem do compartimento do motor
+      - Aplicação de WetCoat
+
+
+
+
+  - title: Plano 3
+    value: Desde 1499€ + IVA
+    description: |+
+      - Proteção física contra riscos e pedras
+      - Auto regenerativa ao sol
+      - Proteção até 8 anos
+      - Acabamento Brilho ou Matte
 
 
 
