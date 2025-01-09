@@ -323,13 +323,14 @@ collections: # A list of collections the CMS should be able to edit
                 name: image
                 widget: image
       ######### TESTE PLANOS ##########
-      - label: "TESTE_PLANOS"
-        name: teste_planos
+      - label: "Planos"
+        name: planos
         description: "Alerar o conteudo da secçao Planos"
         file: "_data/planos.yml"
         fields:
           - name: planos
             label: Planos
+            collapsed: false
             widget: list
             fields:
               - { name: title, label: Titulo }
