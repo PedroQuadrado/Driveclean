@@ -325,6 +325,7 @@ collections: # A list of collections the CMS should be able to edit
       ######### TESTE PLANOS ##########
       - label: "TESTE_PLANOS"
         name: teste_planos
+        description: "Alerar o conteudo da secçao Planos"
         file: "_data/planos.yml"
         fields:
           - name: planos
@@ -360,24 +361,5 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Descrição", name: "description", widget: text }      
       
-    #Planos
-  - name: planos
-    label: Planos
-    description: "Alerar o conteudo da secçao Planos"
-    folder: "_planos"
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - { name: title, label: Titulo }
-      - { name: description, label: Descrição, widget: text }
-      - { name: value, label: Valor, widget: text }
-      - name: items
-        label: Itens
-        widget: list
-        fields:
-          - label: Nome
-            name: name
-            widget: string
-
-   
+  
  
