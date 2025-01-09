@@ -322,6 +322,19 @@ collections: # A list of collections the CMS should be able to edit
               - label: Imagem
                 name: image
                 widget: image
+      ######### TESTE PLANOS ##########
+      - label: "TESTE_PLANOS"
+        name: teste_planos
+        file: "_data/planos.yml"
+        fields:
+          - name: teste_plano
+            label: Plano
+            widget: list
+            fields:
+              - { name: title, label: Titulo }
+              - { name: value, label: Valor, widget: text }
+              - { label: "Descrição", name: "description", widget: "markdown" }
+              
       - label: "Serviços externos"
         name: external
         file: "_data/external.yml"
@@ -366,25 +379,5 @@ collections: # A list of collections the CMS should be able to edit
             name: name
             widget: string
 
-    #TESTES
-  - label: "Lista dentro de Lista"
-    name: testemunhos
-    file: "_data/teste.yml"
-    fields:
-      - name: testemunhos
-        label: Testemunhos
-        widget: list
-        collapsed: "true"
-        fields:
-          - label: Autor
-            name: author
-            widget: string
-          - label: Testemunhos
-            name: testemunhos
-            widget: list
-            fields:
-              - label: ITEM
-                name: item
-                widget: string
-          
+   
  
