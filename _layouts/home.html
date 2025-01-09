@@ -2,6 +2,43 @@
 <html lang="pt-PT">
 
 <head>
+    
+    <!--===== GOOGLE ANALITCS =========-->
+    <script>
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Default ad_storage to 'denied' as a placeholder
+        // Determine actual values based on your own requirements
+        gtag('consent', 'default', {
+            'ad_storage': 'denied'
+        });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFV1R7RWVR"></script>
+    <script>
+        function setCookies() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+
+            gtag('js', new Date());
+            gtag('config', 'G-PFV1R7RWVR', { 'cookie_expires': 31536000});
+
+            sessionStorage.cookies = true
+            document.getElementById("cookies").style.display = "none"
+        }
+    </script>
+
+
+    <!-- Update this section based on your business requirements. -->
+    <script>
+        function consentGranted() {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted'
+            });
+        }
+    </script>
 
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
@@ -67,6 +104,26 @@
 <body>
 
 
+
+    <!--====== COOKIES POPUP START ======-->
+    <div class="cookies" id="cookies">
+        <div class="cookies-popup">
+            <div class="x" onclick="document.getElementById('cookies').style.display = 'none'">x</div>
+            <div class="title">Este website usa Cookies.</div>
+            <div class="description">Olá, utilizamos cookies analíticos para lhe oferecer um melhor serviço, veja mais na nossa 
+                <a href="/politica-de-cookies.html">política de cookies.</a></div>
+            <div class="btns">
+                <button onclick="setCookies()">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        if (sessionStorage.cookies || !!document.cookie) {
+            document.getElementById("cookies").style.display = "none"
+        }
+    </script>
+    <!--====== COOKIES POPUP END ======-->
 
     <!--====== HEADER PART START ======-->
 
@@ -959,6 +1016,7 @@
                         <div class="footer-info mt-30">
                             <h3 class="title">Contactos</h3>
                             <ul>
+                                <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
                                 <li><i class="fal fa-map-marker-alt"></i>{{ site.data.footer.adress }}</li>
                                 <li><i class="fal fa-phone"></i>{{ site.data.footer.mobile_number }}</li>
                                 <li><i class="fal fa-phone-office"></i>{{ site.data.footer.office_number }}</li>

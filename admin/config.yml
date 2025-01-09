@@ -21,9 +21,9 @@ media_library:
 collections: # A list of collections the CMS should be able to edit
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Portfolio" # Used in the UI, ie.: "New Post"
+    label: "Blog" # Used in the UI, ie.: "New Post"
     label_singular: "publicação"
-    description: "Aqui pode ver as publicações que estão no portefólio. Pode adicionar uma nova publicação clicando no botão -Nova publicação-. Também pode ordenar por título/data de publicação ou agrupar por ano/identificadores."
+    description: "Aqui pode ver as publicações que estão no Blog. Pode adicionar uma nova publicação clicando no botão -Nova publicação-. Também pode ordenar por título/data de publicação ou agrupar por ano/identificadores."
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:dsc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -347,21 +347,21 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Descrição", name: "description", widget: text }      
       
-    #Planos
-  - name: planos
-    label: Planos
-    description: "Alerar o conteudo da secçao Planos"
-    folder: "_planos"
-    slug: "{{slug}}"
-    create: true
-    fields:
-      - { name: title, label: Titulo }
-      - { name: description, label: Descrição, widget: text }
-      - { name: value, label: Valor, widget: text }
-      - name: items
-        label: Itens
-        widget: list
+        #Planos
+      - name: planos
+        label: Planos
+        description: "Alerar o conteudo da secçao Planos"
+        folder: "_planos"
+        slug: "{{slug}}"
+        create: true
         fields:
-          - label: Nome
-            name: name
-            widget: string
+          - { name: title, label: Titulo }
+          - { name: description, label: Descrição, widget: text }
+          - { name: value, label: Valor, widget: text }
+          - name: items
+            label: Itens
+            widget: list
+            fields:
+              - label: Nome
+                name: name
+                widget: string
