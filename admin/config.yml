@@ -365,4 +365,26 @@ collections: # A list of collections the CMS should be able to edit
           - label: Nome
             name: name
             widget: string
+
+    #TESTES
+  - label: "Lista dentro de Lista"
+    name: testemunhos
+    file: "_data/teste.yml"
+    fields:
+      - name: testemunhos
+        label: Testemunhos
+        widget: list
+        collapsed: "true"
+        fields:
+          - label: Autor
+            name: author
+            widget: string
+          - label: Testemunhos
+            name: testemunhos
+            widget: list
+            fields:
+              - label: ITEM
+                name: item
+                widget: string
+          
  
