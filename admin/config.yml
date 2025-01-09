@@ -347,21 +347,22 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Descrição", name: "description", widget: text }      
       
-        #Planos
-      - name: planos
-        label: Planos
-        description: "Alerar o conteudo da secçao Planos"
-        folder: "_planos"
-        slug: "{{slug}}"
-        create: true
+    #Planos
+  - name: planos
+    label: Planos
+    description: "Alerar o conteudo da secçao Planos"
+    folder: "_planos"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { name: title, label: Titulo }
+      - { name: description, label: Descrição, widget: text }
+      - { name: value, label: Valor, widget: text }
+      - name: items
+        label: Itens
+        widget: list
         fields:
-          - { name: title, label: Titulo }
-          - { name: description, label: Descrição, widget: text }
-          - { name: value, label: Valor, widget: text }
-          - name: items
-            label: Itens
-            widget: list
-            fields:
-              - label: Nome
-                name: name
-                widget: string
+          - label: Nome
+            name: name
+            widget: string
+ 
