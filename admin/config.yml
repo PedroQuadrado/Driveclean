@@ -369,9 +369,10 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Descrição", name: "description", widget: text }  
       - label: "Meta Tags"
         name: "meta"
+        description: "Adicionar código dentro da secção <head>"
         file: "_data/home_meta.yml"    
         fields:
-          - label: '<HEAD>'
+          - label: 'Código:'
             name: 'home'
             widget: 'code'
             allow_language_selection: true
