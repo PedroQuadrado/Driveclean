@@ -22,7 +22,7 @@ collections: # A list of collections the CMS should be able to edit
   # POSTS
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog" # Used in the UI, ie.: "New Post"
-    label_singular: "publicação"
+    label_singular: "Publicação"
     description: "Aqui pode ver as publicações que estão no Blog. Pode adicionar uma nova publicação clicando no botão -Nova publicação-. Também pode ordenar por título/data de publicação ou agrupar por ano/identificadores."
     folder: "_posts" # The path to the folder where the documents are stored
     sort: "date:dsc" # Default is title:asc
@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
     preview_path: "/portfolio/{{slug}}"
     fields: # The fields each document in this collection have
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Titulo", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Título", name: "title", widget: "string", tagname: "h1" }
       - { label: "Descrição Meta (Aparece nas buscas do Google)", name: "meta_description", widget: "string" }
       - {
           label: "Paragrafo de introdução",
@@ -89,7 +89,7 @@ collections: # A list of collections the CMS should be able to edit
     #SITE_SETTINGS
   - name: "site_settings"
     label: "Configurações do site"
-    description: "Selecione a secção do site que pretende alterar o conteúdo"
+    description: "Selecione a secção do site que pretende alterar."
     editor:
       preview: false
     files:
@@ -107,7 +107,7 @@ collections: # A list of collections the CMS should be able to edit
         name: hero
         file: "_data/hero.yml"
         fields:
-          - { label: "Titulo", name: "title", widget: "text" }
+          - { label: "Título", name: "title", widget: "text" }
           - { label: "Slogan", name: "slogan", widget: "string" }
           - { label: "Link do video", name: "video", widget: "string" }      
           - { label: "Imagem de Fundo", name: "vimage", widget: "image" }
@@ -115,7 +115,7 @@ collections: # A list of collections the CMS should be able to edit
             name: soap
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -125,7 +125,7 @@ collections: # A list of collections the CMS should be able to edit
             name: shield
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -135,7 +135,7 @@ collections: # A list of collections the CMS should be able to edit
             name: stick
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -145,7 +145,7 @@ collections: # A list of collections the CMS should be able to edit
             name: care
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -155,7 +155,7 @@ collections: # A list of collections the CMS should be able to edit
         name: aboutus
         file: "_data/aboutus.yml"
         fields:
-          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
           - { label: "Imagem", name: "backgroundimage", widget: "image" }
           - name: classification
@@ -182,13 +182,13 @@ collections: # A list of collections the CMS should be able to edit
         name: services
         file: "_data/services.yml"
         fields:
-          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "text" }
           - label: "Caixa com icon Vassoura"
             name: vroom
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -198,7 +198,7 @@ collections: # A list of collections the CMS should be able to edit
             name: soap
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -208,7 +208,7 @@ collections: # A list of collections the CMS should be able to edit
             name: stick
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -218,7 +218,7 @@ collections: # A list of collections the CMS should be able to edit
             name: care
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -228,7 +228,7 @@ collections: # A list of collections the CMS should be able to edit
             name: spray
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -238,7 +238,7 @@ collections: # A list of collections the CMS should be able to edit
             name: chat
             widget: object
             fields:
-              - label: Titulo
+              - label: Título
                 name: title
                 widget: string
               - label: Descrição
@@ -267,7 +267,7 @@ collections: # A list of collections the CMS should be able to edit
         name: testemunhos
         file: "_data/testemunhos.yml"
         fields:
-          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "string" }
           - name: testemunhos
             label: Testemunhos
@@ -276,7 +276,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: Autor
                 name: author
                 widget: string
-              - label: Comentario
+              - label: Comentário
                 name: comment
                 widget: markdown
               - label: Estrelas
@@ -292,8 +292,8 @@ collections: # A list of collections the CMS should be able to edit
         name: "overview"
         file: "_data/overview.yml"
         fields:
-          - { label: Title, name: title, widget: string}
-          - { label: Description, name: description, widget: string}
+          - { label: Título, name: title, widget: string}
+          - { label: Descrição, name: description, widget: string}
           - {
               label: "Anos de Experiência",
               name: "experience",
@@ -310,8 +310,8 @@ collections: # A list of collections the CMS should be able to edit
         name: space
         file: "_data/space.yml"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "description", name: "description", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
           - name: images
             label: Imagens
             widget: list
@@ -328,14 +328,14 @@ collections: # A list of collections the CMS should be able to edit
         description: "Alerar o conteudo da secçao Planos"
         file: "_data/planos.yml"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "description", name: "description", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
           - name: planos
             label: Planos
             collapsed: true
             widget: list
             fields:
-              - { name: title, label: Titulo }
+              - { name: title, label: Título }
               - { name: value, label: Valor, widget: text }
               - { label: "Descrição", name: "description", widget: "markdown" }
               
@@ -343,7 +343,7 @@ collections: # A list of collections the CMS should be able to edit
         name: external
         file: "_data/external.yml"
         fields:
-          - { label: "Titulo", name: "title", widget: "string" }
+          - { label: "Título", name: "title", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Nº Movel", name: "mobile", widget: "string" }
           - { label: "Nº Fixo", name: "phone", widget: "string" }
