@@ -328,6 +328,8 @@ collections: # A list of collections the CMS should be able to edit
         description: "Alerar o conteudo da secçao Planos"
         file: "_data/planos.yml"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "description", name: "description", widget: "markdown" }
           - name: planos
             label: Planos
             collapsed: true
