@@ -330,7 +330,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - name: planos
             label: Planos
-            collapsed: false
+            collapsed: true
             widget: list
             fields:
               - { name: title, label: Titulo }
