@@ -35,6 +35,7 @@
     aside a[href="#/dashboard"] span:first-child::before {
       content: "\f0db"
     }
+
     aside a[href="#/collections/post"] span:first-child::before {
       content: "\f15c"
     }
@@ -58,6 +59,7 @@
     aside a[href="#/media"] span:first-child::before {
       content: "\f03e";
     }
+
     aside a[href="#/collections/planos"] span:first-child::before {
       content: "\f4c0";
     }
@@ -73,14 +75,22 @@
       id: 'custom-page',
       title: 'squoosh.app',
       data: "https://squoosh.app/",
-    });   
+    });
+
+    window.addEventListener('load', function () {
+      console.log("1", window.location.href.includes("/meta"));
+      alert("It's loaded!")
+    })
+
   </script>
   <script defer>
     //MUDAR O EDITOR DAS METATAS PARA FICAR FULLWIDTH
+    console.log("2", window.location.href.includes("/meta"));
+    
     if (window.location.href.includes("/meta")) {
       document.querySelector("div.CMS_Editor_content").style.width = "fit-content"
       console.log("PÁGINA META");
-      
+
     }
   </script>
 </body>
