@@ -161,6 +161,7 @@ collections: # A list of collections the CMS should be able to edit
           - name: classification
             label: Clacificações
             widget: list
+            collapsed: true
             fields:
               - label: Imagem
                 name: image
@@ -253,6 +254,7 @@ collections: # A list of collections the CMS should be able to edit
           - name: images
             label: Imagens
             widget: list
+            collapsed: true
             fields:
               - label: Nome
                 name: name
@@ -272,6 +274,7 @@ collections: # A list of collections the CMS should be able to edit
           - name: testemunhos
             label: Testemunhos
             widget: list
+            collapsed: true
             fields:
               - label: Autor
                 name: author
@@ -315,6 +318,7 @@ collections: # A list of collections the CMS should be able to edit
           - name: images
             label: Imagens
             widget: list
+            collapsed: true
             fields:
               - label: Nome
                 name: name
@@ -362,7 +366,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Nº Movel", name: "mobile_number", widget: "string" }
           - { label: "Nº Fixo", name: "office_number", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
-          - { label: "Descrição", name: "description", widget: text }      
-      
-  
+          - { label: "Descrição", name: "description", widget: text }  
+      - label: "Meta Tags"
+        name: "meta"
+        file: "_data/home_meta.yml"    
+        fields:
+          - label: '<HEAD>'
+            name: 'home'
+            widget: 'code'
  
