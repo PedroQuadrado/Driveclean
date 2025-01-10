@@ -63,6 +63,11 @@
     aside a[href="#/collections/planos"] span:first-child::before {
       content: "\f4c0";
     }
+
+    /*MUDAR O EDITOR DAS METATAS PARA FICAR FULLWIDTH*/
+    .CMS_Editor_content:has(div div div[aria-label="code field"]) {
+        width: fit-content;
+    }
   </style>
 </head>
 
@@ -76,23 +81,8 @@
       title: 'squoosh.app',
       data: "https://squoosh.app/",
     });
-
-    window.addEventListener('load', function () {
-      console.log("1", window.location.href.includes("/meta"));
-      alert("It's loaded!")
-    })
-
   </script>
-  <script defer>
-    //MUDAR O EDITOR DAS METATAS PARA FICAR FULLWIDTH
-    console.log("2", window.location.href.includes("/meta"));
-    
-    if (window.location.href.includes("/meta")) {
-      document.querySelector("div.CMS_Editor_content").style.width = "fit-content"
-      console.log("PÁGINA META");
-
-    }
-  </script>
+ 
 </body>
 
 </html>
