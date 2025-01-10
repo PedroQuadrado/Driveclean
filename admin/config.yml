@@ -374,4 +374,5 @@ collections: # A list of collections the CMS should be able to edit
           - label: '<HEAD>'
             name: 'home'
             widget: 'code'
+            allow_language_selection: "true"
  
