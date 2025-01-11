@@ -4709,7 +4709,7 @@ p {
           transform: translateY(-50%);
   right: 90px;
   border-radius: 8px;
-  background: linear-gradient(330deg, rgb(255, 86, 79) 0%, rgb(250, 208, 41) 80%);
+  background: #c22330;
   height: 160px;
   width: 160px;
   text-align: center;
@@ -5211,19 +5211,23 @@ p {
   color: #FF564F;
 }
 .about-5-content .nav {
-  padding-top: 27px;
+  padding-top: 7px;
 }
 .about-5-content .nav li {
   margin-right: 10px;
+  margin-top: 10px;
 }
 .about-5-content .nav li a {
   height: 36px;
   line-height: 36px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(250, 208, 41, 0.2)), color-stop(65%, rgba(255, 86, 79, 0.2)));
-  background: linear-gradient(90deg, rgba(250, 208, 41, 0.2) 0%, rgba(255, 86, 79, 0.2) 65%);
-  color: #FF564F;
+  color: #c22330;
   padding: 0 16px;
   font-weight: 500;
+  border: 1px solid #c22330;
+}
+.about-5-content .nav li a {
+  background: #c22330;
+  color: #fff;
 }
 @media (max-width: 767px) {
   .about-5-content .nav li a {
@@ -5231,8 +5235,7 @@ p {
   }
 }
 .about-5-content .nav li a.active {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(250, 208, 41)), color-stop(65%, rgb(255, 86, 79)));
-  background: linear-gradient(90deg, rgb(250, 208, 41) 0%, rgb(255, 86, 79) 65%);
+  background: #c22330;
   color: #fff;
 }
 .about-5-content .tab-content .tab-pane .text {
