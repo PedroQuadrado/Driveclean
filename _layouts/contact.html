@@ -176,9 +176,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="contact-us-box">
-                        <h3 class="title">Enviar pedido de orçamento</h3>
-                        <p>Envia-nos os serviços que pretendes efetuar no teu carro <br> e iremos responder assim que
-                            possível com um orçamento.
+                        <h3 class="title">{{ site.data.contact.title }}</h3>
+                        <p>{{ site.data.contact.description }}
                         </p>
                         <form id="contact" action="https://formsubmit.co/geral@driveclean.pt" method="POST">
                             <input type="hidden" name="_next" value="https://driveclean.pt/proposal-sent.html">
@@ -226,47 +225,16 @@
 
                                 <div class="col-lg-12 checkboxw3">
                                     <div class="input-box mt-10" style="background-color: #F5F5F5; padding: 15px;">
-                                        <label class="container">Lavagem de manutenção
-                                            <input type="checkbox" name="Lavagem de manutenção">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Higienização interna
-                                            <input type="checkbox" name="Higienização interna">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Polimento comercial
-                                            <input type="checkbox" name="Polimento comercial">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Correção de pintura
-                                            <input type="checkbox" name="Correção de pintura">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Aplicação de proteções
-                                            <input type="checkbox" name="Aplicação de proteções">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Correção de faróis e aplicação de proteção
-                                            <input type="checkbox" name="Correção de faróis e aplicação de proteção">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Serviço de estofador
-                                            <input type="checkbox" name="Serviço de estofador">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Serviço de pintura
-                                            <input type="checkbox" name="Serviço de pintura">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Recuperação de plásticos e/ou couro
-                                            <input type="checkbox" name="Recuperação de plásticos e/ou couro">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="container">Outra:
-                                            <input type="checkbox" name="Outra" onchange="showinput(this.checked)">
-                                            <span class="checkmark"></span>
 
+                                        {% for service in site.data.contact.services %}
+
+
+                                        <label class="container">{{ service }}
+                                            <input type="checkbox" name="{{ service }}">
+                                            <span class="checkmark"></span>
                                         </label>
+                                        {% endfor %}
+
                                         <input type="hidden" name="Texto Outra opção" id="otherOptionInput"
                                             placeholder="Escreva o que pretende"
                                             style="border-bottom: 1px solid black;">

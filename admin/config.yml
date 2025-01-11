@@ -406,8 +406,8 @@ collections: # A list of collections the CMS should be able to edit
   - name: "cookies"
     label: "Página Privacidade"
     description: "Aletar conteudo da página Política de Cookies"
-    #editor:
-      #preview: false
+    editor:
+      preview: false
     files:
       - label: "Conteudo"
         name: "content"
@@ -424,7 +424,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Conteudo"
         name: "content"
-        file: "_data/cookies.yml"
+        file: "_data/contact.yml"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
