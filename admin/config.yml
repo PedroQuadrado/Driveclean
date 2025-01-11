@@ -399,6 +399,6 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Código:'
             name: 'home'
             widget: 'code'
-            default_language: "HTML"
+            default_language: html
             allow_language_selection: true
  

@@ -1,0 +1,3 @@
+---
+layout: politica-de-cookies
+---
