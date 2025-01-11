@@ -90,7 +90,6 @@ collections: # A list of collections the CMS should be able to edit
   - name: "site_settings"
     label: "Página HOME"
     description: "Selecione a secção do site que pretende alterar."
-    
     editor:
       preview: false
     files:
@@ -401,4 +400,17 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'code'
             default_language: html
             allow_language_selection: true
+
+  ######### PÁGINA POLITICA DE COOKIES ##########
+  - name: "cookies"
+    label: "Página Privacidade"
+    description: "Aletar conteudo da página Política de Cookies"
+    #editor:
+     # preview: false
+    files:
+      - label: "Conteudo"
+        name: "politica de cookies"
+        file: "_data/cookies.yml"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
  
