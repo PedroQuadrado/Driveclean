@@ -399,13 +399,13 @@ collections: # A list of collections the CMS should be able to edit
             name: 'home'
             widget: 'code'
             allow_language_selection: true
-            default_language: "html"
+            default_language: "jsx"
             
 
   ######### PÁGINA POLITICA DE COOKIES ##########
   - name: "cookies"
     label: "Página Privacidade"
-    description: "Aletar conteudo da página Política de Cookies"
+    description: "Aletar conteudo da página Política de Cookies (driveclean.pt/politica-de-cookies)"
     editor:
       preview: false
     files:
@@ -418,7 +418,7 @@ collections: # A list of collections the CMS should be able to edit
   ######### PÁGINA DE CONTACTO ##########
   - name: "contact"
     label: "Página Contacto"
-    description: "Aletar conteudo da página Contacto"
+    description: "Alterar conteudo da página Contacto (driveclean.pt/contact)"
     #editor:
       #preview: false
     files:
