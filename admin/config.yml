@@ -90,9 +90,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "site_settings"
     label: "Página HOME"
     description: "Selecione a secção do site que pretende alterar."
-    summary_fields:
-      - label
-      - active
+    
     editor:
       preview: false
     files:
@@ -401,5 +399,6 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Código:'
             name: 'home'
             widget: 'code'
+            default_language: "html"
             allow_language_selection: true
  
