@@ -88,7 +88,7 @@ collections: # A list of collections the CMS should be able to edit
       - { name: description, label: descrição, widget: text }
     #SITE_SETTINGS
   - name: "site_settings"
-    label: "Configurações do site"
+    label: "Página HOME"
     description: "Selecione a secção do site que pretende alterar."
     editor:
       preview: false
