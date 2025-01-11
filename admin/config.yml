@@ -90,6 +90,8 @@ collections: # A list of collections the CMS should be able to edit
   - name: "site_settings"
     label: "Página HOME"
     description: "Selecione a secção do site que pretende alterar."
+    summary_fields:
+      - active
     editor:
       preview: false
     files:
