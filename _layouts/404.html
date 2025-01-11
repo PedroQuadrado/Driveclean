@@ -1,5 +1,256 @@
----
-layout: default
----
 
-{{ content }}
+<!doctype html>
+<html lang="pt-PT">
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Blog | Driveclean | Empresa de Detalhe Automóvel</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/../assets/images/favicon.ico" type="image/png">
+    <link rel="apple-touch-icon" href="/../assets/images/favicon.png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="/../assets/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="/../assets/css/font-awesome.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="/../assets/css/magnific-popup.css">
+
+    <!--====== animate css ======-->
+    <link rel="stylesheet" href="/../assets/css/animate.min.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="/../assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="/../assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="/../assets/css/style.css">
+
+    <style>
+        .blog-pagination {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .blog-pagination a {
+            background-color: gainsboro;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            text-decoration: underline;
+        }
+
+        .blog-pagination .current-page,
+        .blog-pagination span {
+            background-color: #c22330;
+            color: #383838;
+            min-width: 32px;
+            padding: 2px 5px;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="header-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="navigation">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+
+                                <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.png"
+                                        alt=""></a>
+                                <!-- logo -->
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                    <span class="toggler-icon"></span>
+                                </button> <!-- navbar toggler -->
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a class="nav-link" href="index.html#about-us">Sobre Nós </a></li>
+                                                <li><a class="nav-link" href="index.html#portfolio">Galeria </a></li>
+                                                <li><a class="nav-link" href="index.html#testimonials">Testemunhos </a>
+                                                </li>
+                                                <li><a class="nav-link" href="index.html#overview">Overview </a></li>
+                                                <li><a class="nav-link" href="index.html#facilities">Instalações </a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+<li class="nav-item">
+                                            <a class="nav-link" href="/portfolio">Portfólio </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#services">Serviços </a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html#pricing">Preços </a>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a class="nav-link">Social</a>
+                                            <ul class="sub-menu">
+                                                <li><a
+                                                        href="https://www.instagram.com/drivecleandetalheauto/">Instagram</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.facebook.com/drivecleandetalheautomovel/">Facebook</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.youtube.com/channel/UCorWTRmavwd-Lff5rEWvYfQ?app=desktop">Youtube</a>
+                                                </li>
+                                                <li><a href="https://www.tiktok.com/@drivecleandetalheauto">TikTok</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                    </ul>
+                                </div> <!-- navbar collapse -->
+
+                                <div class="navbar-btn d-none d-sm-block">
+                                    <a class="main-btn" href="tel:{{ site.data.header.default_contact }}">{{ site.data.header.contact }}</a>
+                                </div>
+                            </nav>
+                        </div> <!-- navigation -->
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== PAGE TITLE  PART START ======-->
+
+    <div class="page-title-area">
+        <div class="section__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-title-content text-center">
+                        <h3 class="title">404</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">404</li>
+                            </ol>
+                        </nav>
+                        <div class="scroll-to-down">
+                            <a href="#portfolio-scroll"><i class="fal fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PAGE TITLE  PART ENDS ======-->
+
+
+
+
+        <!--====== FOOTER PART START ======-->
+   
+    {% include footer.html %}
+
+    <!--====== FOOTER PART ENDS ======-->
+
+        <!--====== BACK TO TOP START ======-->
+
+        <a class="back-to-top">
+            <i class="fal fa-angle-up"></i>
+        </a>
+
+        <!--====== BACK TO TOP ENDS ======-->
+
+
+
+
+
+
+
+
+
+        <!--====== jquery js ======-->
+        <script src="/../assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/../assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+        <!--====== Bootstrap js ======-->
+        <script src="/../assets/js/bootstrap.min.js"></script>
+        <script src="/../assets/js/popper.min.js"></script>
+
+        <!--====== appear js ======-->
+        <script src="/../assets/js/jquery.appear.min.js"></script>
+
+        <!--====== Slick js ======-->
+        <script src="/../assets/js/slick.min.js"></script>
+
+        <!--====== wow js ======-->
+        <script src="/../assets/js/wow.js"></script>
+
+        <!--====== Isotope js ======-->
+        <script src="/../assets/js/isotope.pkgd.min.js"></script>
+
+        <!--====== Images Loaded js ======-->
+        <script src="/../assets/js/imagesloaded.pkgd.min.js"></script>
+
+        <!--====== Magnific Popup js ======-->
+        <script src="/../assets/js/jquery.magnific-popup.min.js"></script>
+
+        <!--====== Main js ======-->
+        <script src="/../assets/js/main.js"></script>
+
+</body>
+
+</html>
