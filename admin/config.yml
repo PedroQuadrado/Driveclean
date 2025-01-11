@@ -155,6 +155,7 @@ collections: # A list of collections the CMS should be able to edit
         name: aboutus
         file: "_data/aboutus.yml"
         fields:
+          - { label: "Ativo", name: "active", widget: "boolean", default: true }
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
           - { label: "Imagem", name: "backgroundimage", widget: "image" }
@@ -341,6 +342,7 @@ collections: # A list of collections the CMS should be able to edit
           - name: planos
             label: Planos
             collapsed: true
+            label_singular: "Plano"
             widget: list
             fields:
               - { name: title, label: Título }
