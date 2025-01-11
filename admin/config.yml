@@ -250,6 +250,13 @@ collections: # A list of collections the CMS should be able to edit
               - label: Descrição
                 name: description
                 widget: string
+      - label: "Blog"
+        name: blog
+        file: "_data/blog.yml"
+        fields:
+          - { label: "Ativo", name: "active", widget: "boolean", default: true }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
       - label: "Galeria"
         name: gallery
         file: "_data/gallery.yml"

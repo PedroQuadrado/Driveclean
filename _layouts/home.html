@@ -310,7 +310,6 @@
     <!--====== SUB ITEM PART ENDS ======-->
 
     <!--====== ABOUT US PART START ======-->
-    {{ site.data.aboutus.active }}
     {% if site.data.aboutus.active == true %}
 
     <section class="about-us-area pb-100" id="about-us">
@@ -351,7 +350,7 @@
     <!--====== ABOUT US PART ENDS ======-->
 
     <!--====== SERVICE PART START ======-->
-
+    {% if site.data.services.active == true %}
     <section class="service-area pb-100" id="services">
         <div class="container">
             <div class="row justify-content-center">
@@ -450,19 +449,19 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== SERVICE PART ENDS ======-->
 
     <!--====== ARTICAL PART START ======-->
-
+    {% if site.data.blog.active == true %}
     <section class="article-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-9">
                     <div class="section-title text-center">
                         <img src="/assets/images/hero-line.png" alt="">
-                        <h3 class="title">Portfólio</h3>
-                        <p>Fica a conhecer um pouco mais sobre cada trabalho que realizamos.</p>
+                        <h3 class="title">{{ site.data.blog.title }}</h3>
+                        <p>{{ site.data.blog.description }}</p>
                     </div>
                 </div>
             </div>
@@ -514,11 +513,11 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== ARTICAL PART ENDS ======-->
 
     <!--====== PORTFOLIO PART START ======-->
-
+    {% if site.data.gallery.active == true %}
     <section class="portfolio-area pb-130" id="portfolio">
         <div class="container">
             <div class="row justify-content-center">
@@ -553,11 +552,11 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== PORTFOLIO PART ENDS ======-->
 
     <!--====== TESTIMONIAL PART START ======-->
-
+    {% if site.data.testemunhos.active == true %}
     <section class="testimonial-area" id="testimonials">
         <div class="container">
             <div class="row justify-content-center">
@@ -597,11 +596,11 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== TESTIMONIAL PART ENDS ======-->
 
     <!--====== OVERVIEW PART START ======-->
-
+    {% if site.data.overview.active == true %}
     <section class="overview-area pb-100" id="overview">
         <div class="container">
             <div class="row">
@@ -694,11 +693,11 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== OVERVIEW PART ENDS ======-->
 
     <!--====== TEAM PART START ======-->
-
+    {% if site.data.space.active == true %}
     <section class="team-area" id="facilities">
         <div class="container">
             <div class="row justify-content-center">
@@ -832,11 +831,11 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== TEAM PART ENDS ======-->
 
     <!--====== PRICING PART START ======-->
-
+    {% if site.data.planos.active == true %}
     <section class="pricing-area" id="pricing">
         <div class="container">
             <div class="row justify-content-center">
@@ -844,7 +843,7 @@
                     <div class="section-title section-title-2 text-center">
                         <img src="/assets/images/hero-line-5.png" alt="line">
                         <h3 class="title">{{ site.data.planos.title }}</h3>
-                        <p>{{ site.data.space.description }}</p>
+                        <p>{{ site.data.planos.description }}</p>
                     </div>
                 </div>
             </div>
@@ -865,9 +864,9 @@
 
         </div>
     </section>
-
+    {% endif %}
     <!--====== PRICING PART ENDS ======-->
-
+    {% if site.data.external.active == true %}
     <section class="pricing-3-area pricing-page-3">
         <div class="container">
             <div class="row">
@@ -897,7 +896,7 @@
             </div>
         </div>
     </section>
-
+    {% endif %}
     <!--====== SUBSCRIBE PART START ======-->
 
     <div class="subscribe-area subscribe-9-area subscribe-13-area">
