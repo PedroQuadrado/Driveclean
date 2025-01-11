@@ -398,18 +398,18 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Código:'
             name: 'home'
             widget: 'code'
-            default_language: html
+            default_language: HTML
             allow_language_selection: true
 
   ######### PÁGINA POLITICA DE COOKIES ##########
   - name: "cookies"
     label: "Página Privacidade"
     description: "Aletar conteudo da página Política de Cookies"
-    #editor:
-     # preview: false
+    editor:
+      preview: false
     files:
       - label: "Conteudo"
-        name: "politica de cookies"
+        name: "content"
         file: "_data/cookies.yml"
         fields:
           - { label: "Conteúdo", name: "body", widget: "markdown" }
