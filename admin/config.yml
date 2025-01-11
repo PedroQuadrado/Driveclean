@@ -159,9 +159,10 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Descrição", name: "description", widget: "markdown" }
           - { label: "Imagem", name: "backgroundimage", widget: "image" }
           - name: classification
-            label: Clacificações
+            label: Classificações
             widget: list
             collapsed: true
+            label_singular: "Classificação"
             fields:
               - label: Imagem
                 name: image
@@ -249,12 +250,13 @@ collections: # A list of collections the CMS should be able to edit
         name: gallery
         file: "_data/gallery.yml"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "description", name: "description", widget: "markdown" }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
           - name: images
-            label: Imagens
+            label: Galeria
             widget: list
             collapsed: true
+            label_singular: "Foto"
             fields:
               - label: Nome
                 name: name
@@ -275,6 +277,7 @@ collections: # A list of collections the CMS should be able to edit
             label: Testemunhos
             widget: list
             collapsed: true
+            label_singular: "Testemunho"
             fields:
               - label: Autor
                 name: author
@@ -316,9 +319,10 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
           - name: images
-            label: Imagens
+            label: Fotos
             widget: list
             collapsed: true
+            label_singular: "Foto"
             fields:
               - label: Nome
                 name: name
@@ -354,15 +358,17 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Serviços"
             name: "services"
             widget: "list"
+            label_singular: "Serviço"
             fields:
-            - label: Nome
+            - label: "Serviço"
               name: name
               widget: string
       - label: "Rodapé"
         name: "footer"
         file: "_data/footer.yml"
         fields:
-          - { label: "Morada", name: "adress", widget: "string" }
+          - { label: "Morada Principal", name: "adress", widget: "string" }
+          - { label: "2ª Morada", name: "adress2", widget: "string" }
           - { label: "Nº Movel", name: "mobile_number", widget: "string" }
           - { label: "Nº Fixo", name: "office_number", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
