@@ -473,7 +473,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Planos"
         name: planos
         description: "Alerar o conteudo da secçao Planos"
-        file: "_data/personalization.yml"
+        file: "_data/personalization_planos.yml"
         fields:
           - { label: "Ativo", name: "active", widget: "boolean", default: true }
           - { label: "Título", name: "title", widget: "string" }
