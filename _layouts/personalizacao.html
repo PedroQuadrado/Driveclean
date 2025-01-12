@@ -135,20 +135,28 @@
                         </div>
                         <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
 
+                            {% if service.first == true %}
+                            active
+                            {% else %}
+
                             {% for service in site.data.personalization.services %}
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-{{ service.title | slugify }}" data-toggle="pill"
-                                    href="#pills-{{ service.title | slugify}}" role="tab"
-                                    aria-controls="pills-{{ service.title | slugify}}" aria-selected="true">{
-                                    service.title }</a>
+                                <a class="nav-link {% if service.first == true %}
+                                active
+                                {% else %}" id="pills-{{ service.title remove: "" }}" data-toggle="pill"
+                                    href="#pills-{{ service.title remove: ""}}" role="tab"
+                                    aria-controls="pills-{{ service.title remove: ""}}" aria-selected="true">
+                                    {{service.title }}</a>
                             </li>
                             {% endfor %}
 
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             {% for service in site.data.personalization.services %}
-                            <div class="tab-pane fade show active " id="pills-{{ service.title | slugify }}"
-                                role="tabpanel" aria-labelledby="pills-{{ service.title | slugify }}-tab">
+                            <div class="tab-pane fade show {% if service.first == true %}
+                            active
+                            {% else %} " id="pills-{{ service.title remove: "" }}"
+                                role="tabpanel" aria-labelledby="pills-{{ service.title remove: "" }}-tab">
                                 <div class="text">
                                     <p>{{ service.description }}</p>
                                 </div>
