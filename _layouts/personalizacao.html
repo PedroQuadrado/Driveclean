@@ -143,7 +143,7 @@
                                 {% endif  %}" id="pills-{{ service.title remove: " " }}" data-toggle="pill"
                                     href="#pills-{{ service.title remove: "" }}" role="tab"
                                     aria-controls="pills-{{ service.title remove: " "}}" aria-selected="true">
-                                    {{service.title }}</a>
+                                    {{service.title }} {{ forloop.index }}  {{ forloop.first }}</a>
                             </li>
                             {% endfor %}
 
