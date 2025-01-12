@@ -143,7 +143,7 @@
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link {% if service.first == true %}
                                 active
-                                {% else %}" id="pills-{{ service.title remove: "" }}" data-toggle="pill"
+                                {% endif  %}" id="pills-{{ service.title remove: "" }}" data-toggle="pill"
                                     href="#pills-{{ service.title remove: ""}}" role="tab"
                                     aria-controls="pills-{{ service.title remove: ""}}" aria-selected="true">
                                     {{service.title }}</a>
@@ -155,7 +155,7 @@
                             {% for service in site.data.personalization.services %}
                             <div class="tab-pane fade show {% if service.first == true %}
                             active
-                            {% else %} " id="pills-{{ service.title remove: "" }}"
+                            {% endif  %} " id="pills-{{ service.title remove: "" }}"
                                 role="tabpanel" aria-labelledby="pills-{{ service.title remove: "" }}-tab">
                                 <div class="text">
                                     <p>{{ service.description }}</p>
