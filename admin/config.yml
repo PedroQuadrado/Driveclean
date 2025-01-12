@@ -445,28 +445,45 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Conteudo"
         name: "content"
-        file: "_data/contact.yml"
+        file: "_data/personalization.yml"
         fields:
           - { label: "Ativo", name: "active", widget: "boolean", default: true }
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
           - { label: "1ª Imagem", name: image1, widget: image }
           - { label: "2ª Imagem", name: image2, widget: image }
-          
+          - label: "Caixa c/info"
+            name: box
+            widget: object
+            fields:
+              - label: Título
+                name: title
+                widget: string
+              - label: Descrição
+                name: description
+                widget: string
+          - name: services
+            label: Serviços
+            collapsed: true
+            label_singular: "Serviço"
+            widget: list
+            fields:
+              - { name: title, label: Nome }
+              - { label: "Descrição", name: "description", widget: "markdown" }
       - label: "Planos"
-          name: planos
-          description: "Alerar o conteudo da secçao Planos"
-          file: "_data/planos.yml"
-          fields:
-            - { label: "Ativo", name: "active", widget: "boolean", default: true }
-            - { label: "Título", name: "title", widget: "string" }
-            - { label: "Descrição", name: "description", widget: "markdown" }
-            - name: planos
-              label: Planos
-              collapsed: true
-              label_singular: "Plano"
-              widget: list
-              fields:
-                - { name: title, label: Título }
-                - { name: value, label: Valor, widget: text }
-                - { label: "Descrição", name: "description", widget: "markdown" }
+        name: planos
+        description: "Alerar o conteudo da secçao Planos"
+        file: "_data/personalization.yml"
+        fields:
+          - { label: "Ativo", name: "active", widget: "boolean", default: true }
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
+          - name: planos
+            label: Planos
+            collapsed: true
+            label_singular: "Plano"
+            widget: list
+            fields:
+              - { name: title, label: Título }
+              - { name: value, label: Valor, widget: text }
+              - { label: "Descrição", name: "description", widget: "markdown" }
