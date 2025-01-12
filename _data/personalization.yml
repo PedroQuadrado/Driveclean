@@ -1,0 +1,57 @@
+active: true
+title: Personalização Automóvel
+description: >
+  Pequena descrição sobre os serviços de personalização automóvel. Pequena
+  descrição sobre os serviços de personalização automóvel.Pequena descrição
+  sobre os serviços de personalização automóvel.
+image1: /assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg
+image2: /assets/img/uploads/deniz-demirci-dljelfmdpoc-unsplash.jpg
+box:
+  title: 100+
+  description: Viaturas Personalizadas
+services:
+  - title: Car Wrap
+    description: |+
+      pequena descrição sobre car wrap.
+
+      - item 1
+      - item 2
+      - item 3
+      - item 4
+
+
+
+
+  - title: "Películas Proteção Solar "
+    description: |+
+      Pequeno texto descritivo sobre aplicação de películas de proteção solar.
+
+      - Ponto posítivo 1
+      - Ponto posítivo 2
+
+
+
+
+  - title: Decoração de Viaturas Comerciais
+    description: >+
+      Pequeno texto descritivo sobre aplicação de Decoração de Viaturas
+      Comerciais.
+
+
+      - Ponto posítivo 1
+
+      - Ponto posítivo 2
+
+
+
+
+  - title: Kits Estéticos
+    description: |+
+      Pequeno texto descritivo sobre montagem de Kits Estéticos.
+
+      - Ponto posítivo 1
+      - Ponto posítivo 2
+
+
+
+
