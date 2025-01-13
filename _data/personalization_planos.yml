@@ -5,8 +5,11 @@ description: |
 planos:
   - title: Higienização interna
     value: SOB ORÇAMENTO
-    description: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-  - description: |+
+    description: |+
+      
+
+
+
       - Lavagem , limpeza e hidratação de todo o interior
       - Lavagem de bancos
       - Lavagem exterior detalhada
@@ -16,5 +19,11 @@ planos:
 
 
 
+  - description: |
+      - Lavagem , limpeza e hidratação de todo o interior
+      - Lavagem de bancos
+      - Lavagem exterior detalhada
+      - Lavagem do compartimento do motor
+      - Aplicação de WetCoat
     value: SOB ORÇAMENTO
     title: Lavagem de manutenção
