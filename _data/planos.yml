@@ -3,18 +3,6 @@ title: Planos
 description: |
   Entra em contacto connosco e criamos o plano ideal para ti.
 planos:
-  - title: Higienização interna
-    value: SOB ORÇAMENTO
-    description: |+
-      - Lavagem , limpeza e hidratação de todo o interior
-      - Lavagem de bancos
-      - Lavagem exterior detalhada
-      - Lavagem do compartimento do motor
-      - Aplicação de WetCoat
-
-
-
-
   - title: Lavagem de manutenção
     value: Desde 49 € + IVA
     description: |+
@@ -28,8 +16,57 @@ planos:
 
 
 
-  - title: Plano 3
-    value: Desde 1499€ + IVA
+  - title: Higienização interna
+    value: |
+      Desde 159 € + IVA
+    description: |+
+      - Lavagem , limpeza e hidratação de todo o interior
+      - Lavagem de bancos
+      - Lavagem exterior detalhada
+      - Lavagem do compartimento do motor
+      - Aplicação de WetCoat
+
+
+
+
+  - title: Correção de pintura
+    value: Desde 699 € + IVA
+    description: |+
+      - Pré- Lavagem e descontaminação química e mecânica da viatura
+      - Polimento Comercial (Correção para remover o máximo de imperfeições )
+      - Aplicação de proteção
+
+
+
+
+  - title: Polimento de carroçaria
+    value: Desde 349 € + IVA
+    description: |+
+      
+
+
+
+      - Pré- Lavagem e descontaminação química e mecânica da viatura
+      - Polimento Comercial ( Brilho )
+      - Aplicação de Cera ( Proteção até 12 meses )
+
+
+
+
+  - title: Proteções Químicas
+    value: Desde 149 € + IVA
+    description: |+
+      - Ceras em Pasta para até 12 meses
+      - Selantes Cerâmicos para até 12 meses
+      - Proteções Cerâmicas para até 3 anos
+      - Proteções cerâmicas para até 5 anos
+
+
+
+
+  - title: Aplicação de PPF
+    value: |
+      Desde 1499 € + IVA
     description: |+
       - Proteção física contra riscos e pedras
       - Auto regenerativa ao sol
