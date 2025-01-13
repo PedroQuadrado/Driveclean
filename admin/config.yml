@@ -454,6 +454,16 @@ collections: # A list of collections the CMS should be able to edit
               - { name: title, label: Título }
               - { name: value, label: Valor, widget: text }
               - { label: "Descrição", name: "description", widget: "markdown" }
+      - label: "Meta Tags"
+        name: "meta"
+        description: "Adicionar código dentro da secção <head>"
+        file: "_data/home_meta.yml"    
+        fields:
+          - label: 'Código:'
+            name: 'home'
+            widget: 'code'
+            allow_language_selection: true
+            default_language: "jsx"  
             
 
   ######### PÁGINA POLITICA DE COOKIES ##########
