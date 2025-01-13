@@ -16,11 +16,14 @@ description: >+
 
 
 
-backgroundimage: /assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg
+backgroundimage: /assets/img/uploads/SITE/sobre-nos.jpg
 classification:
   - image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png
     description: Descrição
     stars: 3
-  - image: /assets/img/uploads/SOCIAL ICONS/about-brand-3.png
-    description: FACEBOOK
-    stars: 4
+  - image: /assets/img/uploads/SITE/Logos Reviews/google.png
+    description: "Classificação: 4,6*"
+    stars: 5
+  - image: /assets/img/uploads/SITE/Logos Reviews/facebook.png
+    description: "Classificação: 4,9*"
+    stars: 5
