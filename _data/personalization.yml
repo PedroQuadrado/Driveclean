@@ -1,9 +1,7 @@
 active: true
 title: Personalização Automóvel
-description: >
-  Pequena descrição sobre os serviços de personalização automóvel. Pequena
-  descrição sobre os serviços de personalização automóvel.Pequena descrição
-  sobre os serviços de personalização automóvel.
+description: |
+  Pequena descrição sobre os serviços de personalização automóvel.
 image1: /assets/img/uploads/about-thumb-4.png
 image2: /assets/img/uploads/about-thumb-5.png
 box:
