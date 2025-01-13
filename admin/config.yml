@@ -400,43 +400,9 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'code'
             allow_language_selection: true
             default_language: "jsx"
-            
-
-  ######### PÁGINA POLITICA DE COOKIES ##########
-  - name: "cookies"
-    label: "Página Privacidade"
-    description: "Aletar conteudo da página Política de Cookies (driveclean.pt/politica-de-cookies)"
-    editor:
-      preview: false
-    files:
-      - label: "Conteudo"
-        name: "content"
-        file: "_data/cookies.yml"
-        fields:
-          - { label: "Conteúdo", name: "body", widget: "markdown" }
-  
-  ######### PÁGINA DE CONTACTO ##########
-  - name: "contact"
-    label: "Página Contacto"
-    description: "Alterar conteudo da página Contacto (driveclean.pt/contact)"
-    #editor:
-      #preview: false
-    files:
-      - label: "Conteudo"
-        name: "content"
-        file: "_data/contact.yml"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Descrição", name: "description", widget: "markdown" }
-          - name: services
-            label: Serviços
-            label_singular: "Serviço"
-            widget: list
-            fields:
-              - { name: title, label: Nome }
 
 
-  ######### PÁGINA DE PERSONALIZAÇÃO ##########
+######### PÁGINA DE PERSONALIZAÇÃO ##########
   - name: "personalization"
     label: "Página Personalização"
     description: "Alterar conteudo da página Personalização Automóvel (driveclean.pt/personalização)"
@@ -487,3 +453,40 @@ collections: # A list of collections the CMS should be able to edit
               - { name: title, label: Título }
               - { name: value, label: Valor, widget: text }
               - { label: "Descrição", name: "description", widget: "markdown" }
+            
+
+  ######### PÁGINA POLITICA DE COOKIES ##########
+  - name: "cookies"
+    label: "Página Privacidade"
+    description: "Aletar conteudo da página Política de Cookies (driveclean.pt/politica-de-cookies)"
+    editor:
+      preview: false
+    files:
+      - label: "Conteudo"
+        name: "content"
+        file: "_data/cookies.yml"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
+  
+  ######### PÁGINA DE CONTACTO ##########
+  - name: "contact"
+    label: "Página Contacto"
+    description: "Alterar conteudo da página Contacto (driveclean.pt/contact)"
+    #editor:
+      #preview: false
+    files:
+      - label: "Conteudo"
+        name: "content"
+        file: "_data/contact.yml"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "markdown" }
+          - name: services
+            label: Serviços
+            label_singular: "Serviço"
+            widget: list
+            fields:
+              - { name: title, label: Nome }
+
+
+  
