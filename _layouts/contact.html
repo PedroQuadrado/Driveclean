@@ -44,6 +44,76 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .checkboxw3 .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+        .checkboxw3 .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkboxw3 .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .checkboxw3 .container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .checkboxw3 .container input:checked~.checkmark {
+            background-color: #febf00;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkboxw3 .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .checkboxw3 .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .checkboxw3 .container .checkmark:after {
+            left: 10px;
+            top: 6px;
+            width: 5px;
+            height: 10px;
+            border: solid #c22330;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+
+
+
 
 </head>
 
@@ -172,76 +242,6 @@
                                         </script>
                                     </div>
                                 </div>
-                                <style>
-                                    .checkboxw3 .container {
-                                        display: block;
-                                        position: relative;
-                                        padding-left: 35px;
-                                        margin-bottom: 12px;
-                                        cursor: pointer;
-                                        -webkit-user-select: none;
-                                        -moz-user-select: none;
-                                        -ms-user-select: none;
-                                        user-select: none;
-                                    }
-
-                                    /* Hide the browser's default checkbox */
-                                    .checkboxw3 .container input {
-                                        position: absolute;
-                                        opacity: 0;
-                                        cursor: pointer;
-                                        height: 0;
-                                        width: 0;
-                                    }
-
-                                    /* Create a custom checkbox */
-                                    .checkboxw3 .checkmark {
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        height: 25px;
-                                        width: 25px;
-                                        background-color: #eee;
-                                    }
-
-                                    /* On mouse-over, add a grey background color */
-                                    .checkboxw3 .container:hover input~.checkmark {
-                                        background-color: #ccc;
-                                    }
-
-                                    /* When the checkbox is checked, add a blue background */
-                                    .checkboxw3 .container input:checked~.checkmark {
-                                        background-color: #febf00;
-                                    }
-
-                                    /* Create the checkmark/indicator (hidden when not checked) */
-                                    .checkboxw3 .checkmark:after {
-                                        content: "";
-                                        position: absolute;
-                                        display: none;
-                                    }
-
-                                    /* Show the checkmark when checked */
-                                    .checkboxw3 .container input:checked~.checkmark:after {
-                                        display: block;
-                                    }
-
-                                    /* Style the checkmark/indicator */
-                                    .checkboxw3 .container .checkmark:after {
-                                        left: 10px;
-                                        top: 6px;
-                                        width: 5px;
-                                        height: 10px;
-                                        border: solid #c22330;
-                                        border-width: 0 3px 3px 0;
-                                        -webkit-transform: rotate(45deg);
-                                        -ms-transform: rotate(45deg);
-                                        transform: rotate(45deg);
-                                    }
-                                </style>
-
-
-
                                 <div class="col-lg-12">
                                     <div class="input-box mt-10">
                                         <textarea name="Mensagem" id="#" cols="30" rows="10"
