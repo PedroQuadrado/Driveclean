@@ -1,27 +1,45 @@
 active: true
 title: Testemunhos
-description: |+
-  #### A melhor publicidade é feita através de clientes satisfeitos.
-
-
+description: A melhor publicidade é feita através de clientes satisfeitos.
 testemunhos:
-  - author: Autor
-    comment: |
-      Comentario
+  - author: Fernando Paiva
+    comment: >
+      Espetacular, um serviço de excelência. Vale mesmo a pena. Gente que
+      trabalha com gosto.
     stars: 5
-  - author: Autor 2
-    comment: |
-      Comentario
-    stars: 4
-  - author: Autor 3
-    comment: |
-      Comentario
-    stars: 3
-  - author: Autor3
-    comment: |
-      Comentario
+  - comment: |
+      Serviço de excelência! Qualidade superior!
+    author: Gonçalo vinagre
     stars: 5
-  - author: Autor 4
-    comment: |
-      Comentario
-    stars: 2
+  - comment: |
+      Competência e profissionalismo. Recomendo
+    author: João Luis
+    stars: 5
+  - comment: |
+      Limpeza e detalhes automóvel! 5*
+    author: Carlos Moreira
+    stars: 5
+  - comment: |
+      Serviços: Polimento da ponteira de escape, Reparação de pintura
+
+      Positivo: Pontualidade, Preço/qualidade, Profissionalismo, Qualidade
+    author: Filipe Pereira
+    stars: 5
+  - comment: |
+      Serviço espetacular.
+    author: Raul Lucas
+    stars: 5
+  - comment: >
+      Sou fã...
+
+
+
+
+
+
+      Porque tenho um bebé que o mantenho o mais possível personalizado a meu gosto. E acerca de voces, irei em breve solicitar o vosso serviços. Agora que encontrei aqui o vosso contacto e através do tik tok
+
+
+      Parabéns a todos.
+    author: Pedro Roque
+    stars: 5
