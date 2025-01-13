@@ -6,21 +6,33 @@ description: >
 
   ( Vê mais em: [facebook](https://www.facebook.com/drivecleandetalheautomovel/), [instagram](https://www.instagram.com/drivecleandetalheauto/) e [tiktok](https://www.tiktok.com/@drivecleandetalheauto) )
 images:
-  - name: "FOTO #0001"
-    description: Descrição foto 1
-    image: /assets/img/uploads/agent-j-f6romjsomru-unsplash.jpg
+  - name: "Foto #0001"
+    description: Instalações da Driveclean
+    image: /assets/img/uploads/SITE/Galeria/gallery-1.jpg
   - name: "Foto #0002"
-    description: Descrição
-    image: /assets/img/uploads/nick-kaufman-9u-tgk61k7y-unsplash.jpg
-  - name: "FOTO #0003"
-    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
-    description: "FOTO #0003"
-  - name: "FOTO #0003"
-    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
-    description: "FOTO #0003"
-  - name: "FOTO #0003"
-    image: /assets/img/uploads/hugo-b-omqit9jwkvs-unsplash.jpg
-    description: "FOTO #0003"
-  - name: "FOTO #0003"
-    image: /assets/img/uploads/matthew-dockery-s99-jp8p3hg-unsplash.jpg
-    description: "FOTO #0003"
+    description: Moto Detail
+    image: /assets/img/uploads/SITE/Galeria/gallery-46.jpg
+  - name: "Foto #0003"
+    description: Carro em detalhe
+    image: /assets/img/uploads/SITE/Galeria/gallery-49.jpg
+  - name: "Foto #0004"
+    description: Limpeza de Jantes
+    image: /assets/img/uploads/SITE/Galeria/gallery-4.jpg
+  - name: "Foto #0005"
+    description: Proteção com PPF
+    image: /assets/img/uploads/SITE/Galeria/gallery-5.jpg
+  - name: "Foto #0006"
+    description: Lavagem de jantes
+    image: /assets/img/uploads/SITE/Galeria/gallery-6.jpg
+  - name: "Foto #0007"
+    description: Pré-Lavagem a atuar
+    image: /assets/img/uploads/SITE/Galeria/gallery-7.jpg
+  - name: "Foto #0008"
+    description: Restauro de Clássicos
+    image: /assets/img/uploads/SITE/Galeria/gallery-8.jpg
+  - name: "Foto #0009"
+    description: Produtos de excelência para venda ao público.
+    image: /assets/img/uploads/SITE/Galeria/gallery-28.jpg
+  - name: "Foto #0010"
+    image: /assets/img/uploads/SITE/Galeria/gallery-10.jpg
+    description: Atenção extrema no serviço
