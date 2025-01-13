@@ -414,6 +414,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/personalization.yml"
         fields:
           - { label: "Ativo", name: "active", widget: "boolean", default: true }
+          - { label: "Imagem topo", name: hero, widget: image }
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Descrição", name: "description", widget: "markdown" }
           - { label: "1ª Imagem", name: image1, widget: image }
