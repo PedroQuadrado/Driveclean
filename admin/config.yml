@@ -110,7 +110,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Título", name: "title", widget: "text" }
           - { label: "Slogan", name: "slogan", widget: "string" }
           - { label: "Link do video", name: "video", widget: "string" }      
-          - { label: "Imagem de Fundo", name: "vimage", widget: "image" }
+          - { label: "Imagem de Fundo", name: "image", widget: "image" }
           - label: "Caixa com icon Sabão"
             name: soap
             widget: object
@@ -311,7 +311,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Ativo", name: "active", widget: "boolean", default: true }
           - { label: Título, name: title, widget: string}
-          - { label: Descrição, name: description, widget: string}
+          - { label: Descrição, name: description, widget: text}
           - {
               label: "Anos de Experiência",
               name: "experience",
@@ -359,7 +359,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields:
               - { name: title, label: Título }
-              - { name: value, label: Valor, widget: text }
+              - { name: value, label: Valor, widget: string }
               - { label: "Descrição", name: "description", widget: "markdown" }
               
       - label: "Serviços externos"
