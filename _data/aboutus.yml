@@ -18,9 +18,6 @@ description: >+
 
 backgroundimage: /assets/img/uploads/SITE/sobre-nos.jpg
 classification:
-  - image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png
-    description: Descrição
-    stars: 3
   - image: /assets/img/uploads/SITE/Logos Reviews/google.png
     description: "Classificação: 4,6*"
     stars: 5
