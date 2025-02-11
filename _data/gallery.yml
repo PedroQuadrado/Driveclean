@@ -99,3 +99,5 @@ images:
   - name: "Foto #0031"
     description: Tratamento de plásticos Preto Piano
     image: /assets/img/uploads/SITE/Galeria/gallery-56.jpg
+  - name: TESTE
+    description: TESTE
