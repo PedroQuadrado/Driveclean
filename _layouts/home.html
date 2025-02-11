@@ -29,6 +29,66 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+        .cookies {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background-color: #3f3f3fa4;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cookies-popup {
+            background-color: #fff;
+            padding: 50px 30px 25px;
+            position: relative;
+        }
+
+        .cookies-popup .x {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            background-color: #c5c5c5;
+            width: 20px;
+            line-height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            vertical-align: middle;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cookies-popup .title {
+            font-size: 32px;
+            font-family: "space_grotesk";
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .cookies .btns {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .cookies .btns button {
+            margin-top: 15px;
+            background-color: #c22330;
+            border: none;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 35px;
+            font-size: 18px;
+            font-family: "space_grotesk";
+            font-weight: 600;
+        }
+    </style>
+
 
 </head>
 
