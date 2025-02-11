@@ -9,7 +9,7 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 
 publish_mode: editorial_workflow
 
-display_url: https://driveclean-teste.netlify.app
+display_url: https://driveclean.pt
 
 logo_url: https://driveclean.pt/assets/images/favicon.png
 
