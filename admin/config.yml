@@ -478,6 +478,19 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/cookies.yml"
         fields:
           - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  ######### PÁGINA POLITICA DE COOKIES ##########
+  - name: "formacoes"
+    label: "Página Formações"
+    description: "Aletar conteudo da página Formações (driveclean.pt/formacoes)"
+    editor:
+      preview: false
+    files:
+      - label: "Conteudo"
+        name: "content"
+        file: "_data/formacoes.yml"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
   
   ######### PÁGINA DE CONTACTO ##########
   - name: "contact"
