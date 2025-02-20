@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="https://unpkg.com/@staticcms/app@^4.0.0/dist/main.css" />
   <!--====== Conver markdown to html ======-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a09e5a1b04.js" crossorigin="anonymous"></script>
 
   <style>
     aside a span svg {
@@ -75,8 +77,10 @@
     aside a[href="#/collections/planos"] span:first-child::before {
       content: "\f4c0";
     }
-
-
+    
+    aside a[href="#/collections/formacoes"] span:first-child::before {
+      content: "\f19d";
+    }
 
     /*MUDAR O EDITOR DAS METATAS PARA FICAR FULLWIDTH*/
     .CMS_Editor_content:has(div div div[aria-label="code field"]) {
