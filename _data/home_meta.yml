@@ -1,72 +1,81 @@
-home: >2-
-      
-      <!--===== GOOGLE ANALITCS =========-->
-      <script>
-          // Define dataLayer and the gtag function.
+home: >
+  <!--===== GOOGLE ANALYTICS =========-->
+
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+
+      gtag('consent', 'default', { 'ad_storage': 'denied' });
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFV1R7RWVR"></script>
+
+  <script>
+      function setCookies() {
           window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
 
-          // Default ad_storage to 'denied' as a placeholder
-          // Determine actual values based on your own requirements
-          gtag('consent', 'default', {
-              'ad_storage': 'denied'
-          });
-      </script>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFV1R7RWVR"></script>
-      <script>
-          function setCookies() {
-              window.dataLayer = window.dataLayer || [];
-              function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-PFV1R7RWVR', { 'cookie_expires': 31536000 });
 
-              gtag('js', new Date());
-              gtag('config', 'G-PFV1R7RWVR', { 'cookie_expires': 31536000});
+          sessionStorage.cookies = true;
+          document.getElementById("cookies").style.display = "none";
+      }
+  </script>
 
-              sessionStorage.cookies = true
-              document.getElementById("cookies").style.display = "none"
-          }
-      </script>
+  <script>
+      function consentGranted() {
+          gtag('consent', 'update', { 'ad_storage': 'granted' });
+      }
+  </script>
 
 
-      <!-- Update this section based on your business requirements. -->
-      <script>
-          function consentGranted() {
-              gtag('consent', 'update', {
-                  'ad_storage': 'granted'
-              });
-          }
-      </script>
+  <!--====== Required Meta Tags ======-->
 
-      <!--====== Required meta tags ======-->
-      <meta charset="utf-8">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-      <!--====== Title ======-->
-      <title>DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva</title>
+  <!--====== Title ======-->
+
+  <title>DriveClean | Detalhe Automóvel Profissional em Lisboa</title>
 
 
-      <!-- Primary Meta Tags -->
-      <meta name="title" content="DRIVECLEAN | Empresa de Detalhe Automóvel | Agualva">
-      <link rel="canonical" href="https://driveclean.pt/" />
-      <meta name="description"
-          content="Driveclean é uma empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015. Profissionais na área do detalhe e cuidado automóvel, estamos disponíveis para.">
-      <meta name="keywords"
-          content="Driveclean, driveclean, drive clean, driveclean detalhe, detalhe automóvel lisboa, detalhe automóvel, Car, Car detail, detailing, Lavagem de carros, limpeza interior automóvel, automóvel, Polimento, pintura automóvel, ppf, Paint protection film, restauro, desinfeção, proteção cerâmica ">
-      <meta name="robots" content="index, follow">
-      <!-- Open Graph / Facebook -->
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://driveclean.pt/">
-      <meta property="og:title" content="DRIVECLEAN | Car Detail Company">
-      <meta property="og:description"
-          content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
-      <meta property="og:image" content="https://driveclean.pt/website-preview.png">
+  <!-- Primary Meta Tags -->
 
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image">
-      <meta property="twitter:url" content="https://driveclean.pt/">
-      <meta property="twitter:title" content="DRIVECLEAN | Car Detail Company">
-      <meta property="twitter:description"
-          content="Empresa dedicada ao cuidado e estética automóvel, a trabalhar desde 2015 . Profissionais na área do detalhe e cuidado automóvel , estamos disponíveis para ajudar os nossos clientes nos seus projetos.">
-      <meta property="twitter:image" content="https://driveclean.pt/website-preview.png">
+  <meta name="title" content="DriveClean | Especialistas em Detalhe Automóvel em Lisboa">
+
+  <link rel="canonical" href="https://driveclean.pt/" />
+
+  <meta name="description"
+      content="Transforme o seu carro com os especialistas da DriveClean. Polimento, PPF, proteção cerâmica e restauro de pintura. Qualidade premium em Lisboa desde 2015.">
+  <meta name="keywords"
+      content="detalhe automóvel, polimento automóvel, proteção cerâmica, PPF, restauração de pintura, limpeza interior automóvel, detailing, DriveClean Lisboa, estética automóvel">
+  <meta name="robots" content="index, follow">
+
+
+  <!-- Open Graph / Facebook -->
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://driveclean.pt/">
+
+  <meta property="og:title" content="DriveClean | Detalhe Automóvel Profissional em Lisboa">
+
+  <meta property="og:description"
+      content="Polimento, PPF, proteção cerâmica e restauro de pintura. A DriveClean eleva o padrão do detalhe automóvel em Lisboa. Descubra mais!">
+  <meta property="og:image" content="https://driveclean.pt/website-preview.png">
+
+
+  <!-- Twitter -->
+
+  <meta property="twitter:card" content="summary_large_image">
+
+  <meta property="twitter:url" content="https://driveclean.pt/">
+
+  <meta property="twitter:title" content="DriveClean | Detalhe Automóvel Premium em Lisboa">
+
+  <meta property="twitter:description"
+      content="Transformamos carros com excelência. Polimento, PPF, proteção cerâmica e muito mais. DriveClean, referência em detalhe automóvel desde 2015.">
+  <meta property="twitter:image" content="https://driveclean.pt/website-preview.png">
