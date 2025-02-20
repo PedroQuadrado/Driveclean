@@ -465,7 +465,19 @@ collections: # A list of collections the CMS should be able to edit
             allow_language_selection: true
             default_language: "jsx"  
             
-
+  ######### PÁGINA FORMACOES ##########
+  - name: "formacoes"
+    label: "Página Formações"
+    description: "Aletar conteudo da página Formações (driveclean.pt/formacoes)"
+    editor:
+      preview: false
+    files:
+      - label: "Conteudo"
+        name: "content"
+        file: "_data/formacoes.yml"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
+  
   ######### PÁGINA POLITICA DE COOKIES ##########
   - name: "cookies"
     label: "Página Privacidade"
@@ -479,18 +491,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Conteúdo", name: "body", widget: "markdown" }
 
-  ######### PÁGINA POLITICA DE COOKIES ##########
-  - name: "formacoes"
-    label: "Página Formações"
-    description: "Aletar conteudo da página Formações (driveclean.pt/formacoes)"
-    editor:
-      preview: false
-    files:
-      - label: "Conteudo"
-        name: "content"
-        file: "_data/formacoes.yml"
-        fields:
-          - { label: "Conteúdo", name: "body", widget: "markdown" }
+  
   
   ######### PÁGINA DE CONTACTO ##########
   - name: "contact"
