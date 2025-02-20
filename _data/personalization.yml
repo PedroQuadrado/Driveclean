@@ -1,55 +1,70 @@
 active: true
 hero: /assets/img/uploads/SITE/banner-personalizacao.jpg
 title: Personalização Automóvel
-description: |
-  Pequena descrição sobre os serviços de personalização automóvel.
+description: >
+  **🔹 Personalização Automóvel | DriveClean**
+
+
+  Transforme e personalize o seu veículo com os serviços especializados da **DriveClean**. Oferecemos **Car Wrap, Decoração de viaturas comerciais, escurecimento de vidros e detalhes exclusivos** para elevar a estética e proteção do seu automóvel. Qualidade premium, precisão e acabamentos impecáveis. 🚗✨ **Dê um toque único ao seu carro!**
 image1: /assets/img/uploads/about-thumb-4.png
 image2: /assets/img/uploads/about-thumb-5.png
 box:
   title: 100+
-  description: Viaturas Personalizadas
+  description: Cores Disponiveis
 services:
   - title: Car Wrap
-    description: |+
-      pequena descrição sobre car wrap.
+    description: >+
+      Personalize o seu veículo com **vinil de alta qualidade**, garantindo um
+      acabamento profissional e duradouro. Transforme a cor e o estilo do seu
+      carro sem necessidade de pintura!
 
-      - item 1
-      - item 2
-      - item 3
-      - item 4
+
+      - Ampla variedade de cores e acabamentos
+
+      - Proteção extra para a pintura original
+
+      - Removível sem danificar a superfície
+
+      - Acabamento premium e instalação de precisão
 
 
 
 
   - title: "Películas Proteção Solar "
-    description: |+
-      Pequeno texto descritivo sobre aplicação de películas de proteção solar.
+    description: >+
+      Melhore o conforto e a segurança do seu veículo com **películas solares de
+      alta performance**, reduzindo o calor e protegendo contra raios UV.
 
-      - Ponto posítivo 1
-      - Ponto posítivo 2
+
+      - Redução do calor no interior do veículo
+
+      - Proteção contra raios UV prejudiciais
 
 
 
 
   - title: Decoração de Viaturas Comerciais
     description: >+
-      Pequeno texto descritivo sobre aplicação de Decoração de Viaturas
-      Comerciais.
+      Destaque a sua marca na estrada com uma **decoração profissional**,
+      aumentando a visibilidade e credibilidade do seu negócio.
 
 
-      - Ponto posítivo 1
+      - Comunicação visual eficaz e personalizada
 
-      - Ponto posítivo 2
+      - Materiais resistentes às condições climatéricas
 
 
 
 
   - title: Kits Estéticos
-    description: |+
-      Pequeno texto descritivo sobre montagem de Kits Estéticos.
+    description: >+
+      Dê um toque exclusivo ao seu veículo com **kits aerodinâmicos e acessórios
+      personalizados**, melhorando a estética e a performance visual.
 
-      - Ponto posítivo 1
-      - Ponto posítivo 2
+
+      - Estilo mais desportivo e agressivo
+
+      - Materiais leves e resistentes
 
 
 
