@@ -2,10 +2,18 @@ active: true
 hero: /assets/img/uploads/SITE/banner-personalizacao.jpg
 title: Personalização Automóvel
 description: >
-  **🔹 Personalização Automóvel | DriveClean**
+  🔹 Personalização Automóvel | DriveClean
 
 
-  Transforme e personalize o seu veículo com os serviços especializados da **DriveClean**. Oferecemos **Car Wrap, Decoração de viaturas comerciais, escurecimento de vidros e detalhes exclusivos** para elevar a estética e proteção do seu automóvel. Qualidade premium, precisão e acabamentos impecáveis. 🚗✨ **Dê um toque único ao seu carro!**
+  Transforme e personalize o seu veículo com os serviços especializados da DriveClean. 
+
+
+  Oferecemos Car Wrap, Decoração de viaturas comerciais, escurecimento de vidros e detalhes exclusivos para elevar a estética e proteção do seu automóvel. 
+
+
+  Qualidade premium, precisão e acabamentos impecáveis. 🚗✨
+
+   Dê um toque único ao seu carro!
 image1: /assets/img/uploads/untitled-design.jpg
 image2: /assets/img/uploads/img_0634.jpg
 box:
@@ -14,7 +22,7 @@ box:
 services:
   - title: Car Wrap
     description: >+
-      Personalize o seu veículo com **vinil de alta qualidade**, garantindo um
+      Personalize o seu veículo com vinil de alta qualidade, garantindo um
       acabamento profissional e duradouro. Transforme a cor e o estilo do seu
       carro sem necessidade de pintura!
 
@@ -32,8 +40,8 @@ services:
 
   - title: "Películas Proteção Solar "
     description: >+
-      Melhore o conforto e a segurança do seu veículo com **películas solares de
-      alta performance**, reduzindo o calor e protegendo contra raios UV.
+      Melhore o conforto e a segurança do seu veículo com películas solares de
+      alta performance, reduzindo o calor e protegendo contra raios UV.
 
 
       - Redução do calor no interior do veículo
@@ -45,8 +53,8 @@ services:
 
   - title: Decoração de Viaturas Comerciais
     description: >+
-      Destaque a sua marca na estrada com uma **decoração profissional**,
-      aumentando a visibilidade e credibilidade do seu negócio.
+      Destaque a sua marca na estrada com uma decoração profissional, aumentando
+      a visibilidade e credibilidade do seu negócio.
 
 
       - Comunicação visual eficaz e personalizada
@@ -58,8 +66,8 @@ services:
 
   - title: Kits Estéticos
     description: >+
-      Dê um toque exclusivo ao seu veículo com **kits aerodinâmicos e acessórios
-      personalizados**, melhorando a estética e a performance visual.
+      Dê um toque exclusivo ao seu veículo com kits aerodinâmicos e acessórios
+      personalizados, melhorando a estética e a performance visual.
 
 
       - Estilo mais desportivo e agressivo
