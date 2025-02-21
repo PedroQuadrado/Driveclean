@@ -37,22 +37,19 @@ home: >
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!--====== Title ======-->
+  <!--====== SEO Meta Tags ======-->
 
-  <title>DriveClean | Detalhe Automóvel Profissional em Lisboa</title>
+  <title>DriveClean | Especialistas em Detalhe Automóvel, Proteção e Personalização</title>
 
-
-  <!-- Primary Meta Tags -->
-
-  <meta name="title" content="DriveClean | Especialistas em Detalhe Automóvel em Lisboa">
+  <meta name="title" content="DriveClean | Detalhe Automóvel, Proteção e Personalização">
 
   <link rel="canonical" href="https://driveclean.pt/" />
 
   <meta name="description"
-      content="Transforme o seu carro com os especialistas da DriveClean. Polimento, PPF, proteção cerâmica e restauro de pintura. Qualidade premium em Lisboa desde 2015.">
+      content="Proteja, restaure e personalize o seu carro com os especialistas da DriveClean. Serviços de detalhe automóvel, polimento, PPF, car wrap e películas solares. Qualidade premium desde 2015.">
   <meta name="keywords"
-      content="detalhe automóvel, polimento automóvel, proteção cerâmica, PPF, restauração de pintura, limpeza interior automóvel, detailing, DriveClean Lisboa, estética automóvel">
-  <meta name="robots" content="index, follow">
+      content="detalhe automóvel, polimento automóvel, proteção cerâmica, PPF, car wrap, películas solares, restauro de interiores, limpeza interior automóvel, estética automóvel Lisboa, proteção de pintura, DriveClean Portugal">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
 
   <!-- Open Graph / Facebook -->
@@ -61,11 +58,20 @@ home: >
 
   <meta property="og:url" content="https://driveclean.pt/">
 
-  <meta property="og:title" content="DriveClean | Detalhe Automóvel Profissional em Lisboa">
+  <meta property="og:title" content="DriveClean | Proteção e Personalização Automóvel Premium">
 
   <meta property="og:description"
-      content="Polimento, PPF, proteção cerâmica e restauro de pintura. A DriveClean eleva o padrão do detalhe automóvel em Lisboa. Descubra mais!">
+      content="Detalhe automóvel, polimento, PPF, car wrap e proteção cerâmica. Elevamos o padrão de estética e proteção automóvel. Descubra mais!">
   <meta property="og:image" content="https://driveclean.pt/website-preview.png">
+
+  <meta property="og:image:alt" content="DriveClean - Especialistas em Detalhe Automóvel">
+
+  <meta property="og:site_name" content="DriveClean">
+
+
+  <!-- Facebook App ID (Opcional) -->
+
+  <meta property="fb:app_id" content="SEU_APP_ID_AQUI"> 
 
 
   <!-- Twitter -->
@@ -74,8 +80,10 @@ home: >
 
   <meta property="twitter:url" content="https://driveclean.pt/">
 
-  <meta property="twitter:title" content="DriveClean | Detalhe Automóvel Premium em Lisboa">
+  <meta property="twitter:title" content="DriveClean | Proteção e Personalização Automóvel">
 
   <meta property="twitter:description"
-      content="Transformamos carros com excelência. Polimento, PPF, proteção cerâmica e muito mais. DriveClean, referência em detalhe automóvel desde 2015.">
+      content="Transforme o seu carro com detalhe automóvel, polimento, PPF, car wrap e proteção cerâmica. DriveClean, excelência desde 2015.">
   <meta property="twitter:image" content="https://driveclean.pt/website-preview.png">
+
+  <meta property="twitter:image:alt" content="DriveClean - Especialistas em Detalhe Automóvel">
